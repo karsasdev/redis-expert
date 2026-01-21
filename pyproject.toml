@@ -1,0 +1,29 @@
+[project]
+name = "redis-expert"
+version = "0.1.0"
+description = "Redis Expert: RAG-based Redis Documentation Assistant"
+requires-python = ">=3.14"
+dependencies = [
+    "gradio>=6.4.0",
+    "ipykernel>=7.1.0",
+    "langchain>=1.2.6",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.7",
+    "langchain-huggingface>=1.2.0",
+    "langchain-openai>=1.1.7",
+    "langchain-postgres>=0.0.16",
+    "langchain-redis>=0.2.5",
+    "langchain-text-splitters>=1.1.0",
+    "matplotlib>=3.10.8",
+    "sentence-transformers>=5.2.0",
+    "streamlit>=1.53.1",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "black>=26.1.0",
+    "plotly>=6.5.2",
+    "ruff>=0.14.13",
+    "sqlalchemy>=2.0.45",
+]

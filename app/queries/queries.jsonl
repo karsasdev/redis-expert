@@ -1,0 +1,200 @@
+{"id": "8b682b04-9eb1-40b8-b562-2302ec5e2119", "question": "What is Redis and why is it commonly used in backend systems?", "keywords": ["in-memory", "key-value", "low latency"]}
+{"id": "c5ac2b2b-a3b3-445a-bd0d-e36feb2aba83", "question": "What is the difference between Redis caching and Redis as a primary database?", "keywords": ["cache", "persistence", "durability"]}
+{"id": "e9b9af5f-9976-4010-a0f9-75652d2a004b", "question": "How does Redis TTL work and what are common use cases for it?", "keywords": ["TTL", "expiration", "cache invalidation"]}
+{"id": "74f19f89-213c-41ba-bcd1-be77819b7681", "question": "What are Redis basic data structures and one example use for each?", "keywords": ["string", "hash", "list"]}
+{"id": "1e0eb8d1-af7d-4124-a6ad-eaae50d0a200", "question": "What is Redis persistence and what are RDB and AOF?", "keywords": ["RDB", "AOF", "snapshot"]}
+{"id": "d15a4ae2-fa44-47b4-a9b7-cc9fd831f294", "question": "What is the difference between LRU and LFU eviction policies in Redis?", "keywords": ["LRU", "LFU", "eviction"]}
+{"id": "7d1accc5-a178-4fde-b9ae-f6965e71ea17", "question": "What is Redis Sentinel and when would you use it?", "keywords": ["sentinel", "failover", "high availability"]}
+{"id": "5c0c40d4-df72-4a60-accb-e81daf32ce3a", "question": "Why is using Redis as a queue with Lists common, and what are typical commands?", "keywords": ["list", "BLPOP", "queue"]}
+{"id": "281a9880-4a47-4297-a356-d4c28d0d7045", "question": "What is the difference between RDB-only and AOF-only persistence modes?", "keywords": ["RDB", "AOF", "recovery"]}
+{"id": "7b1e6c77-d91c-4071-815b-21d9dd1ec3fc", "question": "What is cache stampede and how can Redis help prevent it?", "keywords": ["cache stampede", "locking", "singleflight"]}
+{"id": "0cdd83e2-8385-4f08-9f37-c53747a5aa1d", "question": "What is Redis memory fragmentation and why does it matter (in production)?", "keywords": ["fragmentation", "allocator", "overhead"]}
+{"id": "8b7e2ff2-3750-4043-9f7f-e8cf732aa712", "question": "Why doesn't Redis MULTI/EXEC provide rollback on errors (in production)?", "keywords": ["WATCH", "EXEC", "MULTI"]}
+{"id": "23664eac-bfb9-4bb1-945b-eab8b07080f7", "question": "How is a leaderboard implemented in Redis (in production)?", "keywords": ["list", "hash", "sorted set"]}
+{"id": "f55a8cc2-39cd-4310-9a0e-fed80e7ecd4e", "question": "What is write-through caching vs write-back caching with Redis?", "keywords": ["stampede", "cache-aside", "write-through"]}
+{"id": "170c0914-0906-4170-b62d-c4624cd6a76b", "question": "Why is connection pooling important for Redis clients (in production)?", "keywords": ["timeouts", "pooling", "retries"]}
+{"id": "32ae123a-dc39-4af2-91fe-569612a6b75a", "question": "What is a hash tag in Redis Cluster and why is it used?", "keywords": ["sharding", "cluster", "hash slots"]}
+{"id": "5aa7593b-bbc3-4cf9-9f23-312399105f98", "question": "What does maxmemory do and what happens when it's reached (in production)?", "keywords": ["LRU", "LFU", "maxmemory"]}
+{"id": "4fe95a0d-29a8-468e-b769-6c4a73d86eb1", "question": "What are consumer groups in Redis Streams?", "keywords": ["ACK", "consumer groups", "pending"]}
+{"id": "a694a33b-a291-4fb0-afe3-5fe24a85dfb9", "question": "What does it mean that Redis is single-threaded for command execution (in production)?", "keywords": ["single-threaded", "atomic", "in-memory"]}
+{"id": "06f9a0b2-631f-4e77-b4e5-0132f8f0b80e", "question": "Why do distributed locks need a unique token value?", "keywords": ["SET NX", "token", "TTL"]}
+{"id": "da6bc346-d31b-43a1-870b-85b56e1b81af", "question": "How do you improve Redis throughput for bulk writes (in production)?", "keywords": ["latency", "throughput", "pipelining"]}
+{"id": "30f3f584-e98d-40ce-a51a-207a4f6859a8", "question": "What are common Redis use cases in microservices architectures?", "keywords": ["cache", "rate limiting", "sessions"]}
+{"id": "d1a2d428-e09d-4379-b354-781d12bdacc4", "question": "When should you use a Sorted Set instead of a Set in Redis?", "keywords": ["sorted set", "list", "hash"]}
+{"id": "faf9616d-dcc6-4681-8d4d-74dbfb21a696", "question": "What are important Redis metrics to monitor in production (in production)?", "keywords": ["latency", "evictions", "INFO"]}
+{"id": "59cb6908-b275-43ed-aee1-61ddfe2f5711", "question": "What are the advantages of doing rate limiting in a Redis Lua script (in production)?", "keywords": ["Lua", "script", "atomic"]}
+{"id": "1c0e3051-0b94-4b12-a533-5881e4d41790", "question": "What does EXPIRE do and how does it interact with SET?", "keywords": ["EXPIRE", "DEL", "SCAN"]}
+{"id": "9cdb9d4a-86fa-4118-9990-0ff5366eb094", "question": "What happens during a full resynchronization in replication?", "keywords": ["replica", "failover", "lag"]}
+{"id": "9aba5c67-af0a-4968-85de-481e3d4ddba9", "question": "What are Redis ACLs and how are they useful?", "keywords": ["ACL", "AUTH", "TLS"]}
+{"id": "46df2e2f-c801-4b31-9faa-5948f099b942", "question": "What is the role of the replication backlog (in production)?", "keywords": ["failover", "lag", "replica"]}
+{"id": "cd1e3e10-61c9-4431-87ee-d4cdcb2cfa81", "question": "What is the difference between DEL and UNLINK in Redis (in production)?", "keywords": ["EXPIRE", "DEL", "SCAN"]}
+{"id": "31349cda-eb10-4ebb-8ae3-dd29b2086dcb", "question": "What is the token bucket algorithm and how can Redis support it?", "keywords": ["sliding window", "token bucket", "fixed window"]}
+{"id": "acbb9e30-018c-474c-ae3b-489aa2a4c3ec", "question": "What is the Redis protocol (RESP) and why does it matter for clients?", "keywords": ["RESP", "protocol", "redis-cli"]}
+{"id": "f6bb3887-6b6c-4ecd-9a4c-b44f3a2051ac", "question": "What are common Redis deployment topologies?", "keywords": ["standalone", "primary-replica", "cluster"]}
+{"id": "53ded593-d5e2-4913-b3b2-cd0608d1c1f8", "question": "What does Redis mean by command atomicity?", "keywords": ["atomic", "single command", "no interleaving"]}
+{"id": "cda5830a-49a5-481a-bcd3-5845fd18c2bc", "question": "What is the Cache-Aside pattern with Redis?", "keywords": ["cache-aside", "read-through", "miss"]}
+{"id": "dbaf125f-ca5f-46ac-ae2b-0fbd805f2ed2", "question": "How do you prevent stale cache when updating data in the database?", "keywords": ["invalidation", "TTL", "write patterns"]}
+{"id": "3c0b4c07-5f28-449a-88db-d14df1a9a3dc", "question": "What is a Redis pipeline and how is it different from a transaction?", "keywords": ["pipelining", "MULTI", "round trips"]}
+{"id": "e33fa1ad-275f-4a02-bdd5-7cfd28975ded", "question": "What is the difference between EXPIRE and PEXPIRE?", "keywords": ["EXPIRE", "PEXPIRE", "milliseconds"]}
+{"id": "51f7cddc-c7e3-4622-9af0-b86c8907bc7d", "question": "What is the difference between TTL and PTTL?", "keywords": ["TTL", "PTTL", "remaining time"]}
+{"id": "0d929410-01d7-4e21-9378-48263b872d0e", "question": "What is the difference between EXPIREAT and PEXPIREAT?", "keywords": ["EXPIREAT", "PEXPIREAT", "unix time"]}
+{"id": "81a8700d-e810-43b4-8745-af96417c09bb", "question": "What is Redis keyspace notification and when would you use it?", "keywords": ["keyspace notifications", "events", "expired"]}
+{"id": "98647f63-0012-4082-a6c3-1e358c3bf308", "question": "What is the difference between Pub/Sub and Streams in Redis?", "keywords": ["pubsub", "streams", "durability"]}
+{"id": "465f01ce-8679-47f0-9c1f-4dae860faec3", "question": "How do you implement a reliable queue using Redis Streams?", "keywords": ["streams", "consumer group", "ack"]}
+{"id": "6db6abe9-387d-4ae6-80b4-f04afde75439", "question": "What are Redis Stream pending entries and why are they important?", "keywords": ["XPENDING", "unacked", "re-delivery"]}
+{"id": "7c52d030-0a7d-43c7-986a-899b13461af5", "question": "What is the difference between a Redis List queue and a Stream queue?", "keywords": ["lists", "streams", "ack"]}
+{"id": "92535ef3-a381-41d1-b804-6214abec508b", "question": "What is a Redis Sorted Set and what is its time complexity for common operations?", "keywords": ["zset", "logN", "leaderboard"]}
+{"id": "17fb8ba2-e7c7-4e21-af1d-e6b82ed4d121", "question": "How do you implement a priority queue in Redis?", "keywords": ["sorted set", "priority", "ZPOPMIN"]}
+{"id": "2f2036d3-a3fb-4f1b-895b-39f0998c7366", "question": "What is the difference between ZRANGE and ZRANGEBYSCORE?", "keywords": ["ZRANGE", "ZRANGEBYSCORE", "sorted set"]}
+{"id": "597eadc1-a7b9-47a1-b105-f41a8f0fde32", "question": "How do you implement a leaderboard with Redis Sorted Sets?", "keywords": ["ZADD", "ZRANGE", "rank"]}
+{"id": "7cd64a57-181f-4762-ad0b-dcefd3af345c", "question": "How do you store session data in Redis securely?", "keywords": ["sessions", "TTL", "key design"]}
+{"id": "d2bfe63e-df9d-4ba1-8958-d8afc6862717", "question": "What is the difference between AUTH and ACL users in Redis?", "keywords": ["AUTH", "ACL", "users"]}
+{"id": "c79b536b-b9a7-44a5-b504-061a1fcdd66a", "question": "What is the impact of running KEYS * in production?", "keywords": ["KEYS", "blocking", "O(N)"]}
+{"id": "b4fcdd7f-d8f3-46d4-b4dc-704a8ef51956", "question": "How does SCAN work and what should you be careful about?", "keywords": ["SCAN", "cursor", "iteration"]}
+{"id": "5937366a-7559-4ad0-bfbc-ad2d435d7285", "question": "What is the difference between synchronous and asynchronous deletion in Redis?", "keywords": ["DEL", "UNLINK", "lazy free"]}
+{"id": "971c2c38-cfc2-4df6-82c5-573133cd6cbd", "question": "What is Redis lazy freeing and why is it useful?", "keywords": ["lazyfree", "background freeing", "latency"]}
+{"id": "9e43a966-c419-4993-ad7f-4571a542f511", "question": "What does the Redis INFO command 'used_memory' represent?", "keywords": ["INFO", "used_memory", "RAM"]}
+{"id": "5f9fdb90-c9cb-4321-85e1-3fe124613118", "question": "What does 'used_memory_rss' represent in Redis INFO?", "keywords": ["RSS", "memory", "fragmentation"]}
+{"id": "84ba382c-c6cd-4955-96da-260e265f5a71", "question": "What is Redis replication and is it synchronous by default?", "keywords": ["replication", "async", "primary"]}
+{"id": "a579879c-2eb6-4190-8d50-6e373a62b7ee", "question": "How does the WAIT command improve write safety?", "keywords": ["WAIT", "replicas", "ack"]}
+{"id": "ba6493b1-cc03-4bd9-928a-d1380023b029", "question": "What does 'min-replicas-to-write' do?", "keywords": ["min-replicas-to-write", "availability", "safety"]}
+{"id": "08a0f341-b898-402c-9337-a33d9777cb44", "question": "What is Redis Sentinel and what does it manage?", "keywords": ["sentinel", "monitoring", "failover"]}
+{"id": "c3e25161-73f7-4f85-a057-12cad2dea9a2", "question": "What are the main failure modes Sentinel tries to detect (SDOWN vs ODOWN)?", "keywords": ["SDOWN", "ODOWN", "quorum"]}
+{"id": "78d12993-1854-490b-9ff4-6d3f5cc0cf42", "question": "What is Redis Cluster and how does it scale data?", "keywords": ["cluster", "hash slots", "sharding"]}
+{"id": "ff0dbefc-7b99-4203-991c-4358467a406f", "question": "Why do Redis Cluster multi-key operations require hash tags?", "keywords": ["hash tags", "same slot", "multi-key"]}
+{"id": "4278d851-ddf9-46ac-b77c-2e8fffc7d581", "question": "What happens when a Redis Cluster node is down and owns hash slots?", "keywords": ["cluster", "failover", "slots"]}
+{"id": "6a2538df-5392-43fb-8e5c-5bae77976b1e", "question": "What is a hot key problem in Redis and how do you mitigate it?", "keywords": ["hot key", "skew", "scaling"]}
+{"id": "d510cc1a-6d25-44f9-bc42-8b27d8d150c3", "question": "What is a cache penetration problem and how do you prevent it?", "keywords": ["cache penetration", "misses", "negative cache"]}
+{"id": "c961cf52-a42b-499b-9b1b-d1bd8ac857b2", "question": "What is negative caching in Redis?", "keywords": ["negative cache", "miss", "TTL"]}
+{"id": "8eaab0bd-bdd0-4692-9d2d-08a39b26206e", "question": "What is a Bloom filter and how can it help with Redis caching?", "keywords": ["bloom filter", "probabilistic", "penetration"]}
+{"id": "8b5afede-ccbb-48da-a6ba-f1255c4a3a38", "question": "What is Redis Lua EVAL and why is it atomic?", "keywords": ["EVAL", "lua", "atomic"]}
+{"id": "17bfd351-d135-4c01-bcd0-a4f570416887", "question": "What are common pitfalls when writing Lua scripts in Redis?", "keywords": ["lua", "blocking", "time limit"]}
+{"id": "55bff79e-89cb-4a17-ab16-95fb5d6df9e7", "question": "What is Redis script caching and how does EVALSHA work?", "keywords": ["SCRIPT LOAD", "EVALSHA", "sha1"]}
+{"id": "e50a55ec-c437-4fc9-9fc8-450266b34b83", "question": "How do you implement idempotency keys using Redis?", "keywords": ["idempotency", "SET NX", "TTL"]}
+{"id": "caefde06-ac15-4e6f-b4c6-3fa2efefbb99", "question": "How do you implement a sliding-window rate limiter using Redis?", "keywords": ["sliding window", "sorted set", "timestamps"]}
+{"id": "23e1511b-9ebe-4887-8f2f-7831912b8949", "question": "What is the difference between fixed window and sliding window rate limiting?", "keywords": ["fixed window", "sliding window", "burst"]}
+{"id": "173fcd3c-bc7b-4205-afe0-8a53b493eeec", "question": "How do you implement a token bucket rate limiter using Redis?", "keywords": ["token bucket", "refill", "lua"]}
+{"id": "a8d7b987-afde-4909-acd0-f63ae64865f9", "question": "What is Redis key naming best practice for large systems?", "keywords": ["namespacing", "prefix", "readability"]}
+{"id": "3b892236-522c-4248-a923-646d16982c15", "question": "What is the difference between FLUSHDB and FLUSHALL?", "keywords": ["FLUSHDB", "FLUSHALL", "dangerous"]}
+{"id": "5c687f48-87d7-4927-8212-4a589b28b9cf", "question": "What is the difference between an in-memory cache and a distributed cache like Redis?", "keywords": ["distributed cache", "shared", "consistency"]}
+{"id": "1019c9b2-6899-4290-aa2b-17d4af46621a", "question": "What is Redis latency and what typically causes latency spikes?", "keywords": ["latency", "slow commands", "fork"]}
+{"id": "f80c755f-a874-4432-93ea-bb02d88c03da", "question": "What is Copy-on-Write (CoW) and how does it affect Redis during background saves?", "keywords": ["fork", "CoW", "RDB"]}
+{"id": "69f51336-370a-4905-ae0a-34488a20e9e2", "question": "What does 'appendfsync everysec' mean in AOF configuration?", "keywords": ["AOF", "fsync", "durability"]}
+{"id": "4430baa1-cfe5-494b-8016-b4455bad1a4b", "question": "What is the difference between appendfsync always, everysec, and no?", "keywords": ["appendfsync", "always", "everysec"]}
+{"id": "aa086a8c-fa3f-4b2f-b76c-ad66fe4fed0b", "question": "What is AOF 'fsync' and why does it matter?", "keywords": ["fsync", "disk", "durability"]}
+{"id": "bcc441b3-195d-4220-bf21-7af6297ef1cb", "question": "What does the Redis command SLOWLOG provide?", "keywords": ["SLOWLOG", "profiling", "slow commands"]}
+{"id": "32c449c2-ac65-4197-9831-4f5f85bdde9a", "question": "What is MONITOR in Redis and why should it be used carefully?", "keywords": ["MONITOR", "debug", "overhead"]}
+{"id": "ab547811-3f68-473e-8282-74d40d7833cf", "question": "What does 'maxmemory-policy noeviction' do?", "keywords": ["noeviction", "maxmemory", "errors"]}
+{"id": "2cba0ac1-4197-4e51-8eef-e01c24de7c55", "question": "What is the difference between volatile-lru and allkeys-lru eviction policies?", "keywords": ["volatile-lru", "allkeys-lru", "TTL"]}
+{"id": "5a93b89d-1534-4dac-a0e0-7b635a45f13a", "question": "What is the purpose of maxmemory-samples in Redis?", "keywords": ["maxmemory-samples", "LRU", "approximation"]}
+{"id": "53dea67b-1efc-42cf-bc65-0912a8987e31", "question": "Why is using many Redis databases (SELECT) usually discouraged for multi-tenancy?", "keywords": ["SELECT", "databases", "isolation"]}
+{"id": "c26f205a-7838-402d-b2fc-9ee98a32c502", "question": "What is Redis client-side caching (tracking) and what problem does it solve?", "keywords": ["client-side caching", "tracking", "invalidation"]}
+{"id": "85740a57-ea67-4e1d-8302-157896027fd8", "question": "What is memory eviction vs key expiration in Redis?", "keywords": ["eviction", "expiration", "TTL"]}
+{"id": "619c955c-de8c-4885-a00b-59f421aae070", "question": "How does Redis expire keys: passive vs active expiration?", "keywords": ["active expiration", "lazy deletion", "sampling"]}
+{"id": "4d9c39d8-7208-4217-9df1-db4ff33004fe", "question": "What is a Redis 'big key' and why is it a problem?", "keywords": ["bigkeys", "latency", "memory"]}
+{"id": "5beccd11-bc1a-48ac-9deb-98195839091b", "question": "How do you identify big keys in Redis?", "keywords": ["--bigkeys", "MEMORY USAGE", "scan"]}
+{"id": "660ac4c9-fe28-4c08-b079-276d21954786", "question": "How do you safely delete a big key without blocking Redis?", "keywords": ["UNLINK", "lazyfree", "async delete"]}
+{"id": "a7014c45-15a0-4e58-a84c-5332bea40e29", "question": "What is the difference between HGETALL and HMGET for hashes?", "keywords": ["HGETALL", "HMGET", "bandwidth"]}
+{"id": "6328dfdc-1ce9-4dd6-b35b-7fb8c0670608", "question": "Why is storing JSON as a Redis string sometimes problematic?", "keywords": ["json", "partial updates", "schema"]}
+{"id": "6a9296b9-0c07-4127-a4d8-9c34a0692b7e", "question": "What is RedisJSON and when would you consider it?", "keywords": ["RedisJSON", "module", "documents"]}
+{"id": "799e6320-735d-40d4-9ce8-b47bdd3d3035", "question": "What is RediSearch and what does it enable?", "keywords": ["RediSearch", "full-text", "index"]}
+{"id": "4ccd8f9f-27f0-45c0-944d-b74d81440498", "question": "What does MGET do in Redis?", "keywords": ["MGET", "batch read", "strings"]}
+{"id": "6eac741e-848c-4897-a1c4-a2db450d88e7", "question": "What does MSET do in Redis?", "keywords": ["MSET", "batch write", "strings"]}
+{"id": "4316bc16-dd32-4f3e-9b8f-541a0d244c2d", "question": "What does INCR do and is it atomic?", "keywords": ["INCR", "counter", "atomic"]}
+{"id": "b0ae6bb9-f42d-4266-9f06-adcedfae144f", "question": "What does DECR do in Redis?", "keywords": ["DECR", "counter", "atomic"]}
+{"id": "785453f9-f0d6-49f0-a8ac-d6271f1769ed", "question": "What does GETSET do?", "keywords": ["GETSET", "swap", "atomic"]}
+{"id": "0808ccd9-d2b1-4953-a9c1-9a59e0908110", "question": "What does SETEX do?", "keywords": ["SETEX", "TTL", "string"]}
+{"id": "5e697c37-ded6-4203-8d9c-0362f81a6191", "question": "What does PSETEX do?", "keywords": ["PSETEX", "TTL", "milliseconds"]}
+{"id": "416fba2d-96f5-4ac6-85e1-445fc23b20c6", "question": "What does SETNX do and what is its modern replacement?", "keywords": ["SETNX", "NX", "lock"]}
+{"id": "e4222b4f-f4d7-4aa0-9754-059a033b344b", "question": "What does GETDEL do?", "keywords": ["GETDEL", "delete", "atomic"]}
+{"id": "61c29528-c35b-424f-90b2-bb6a57b2ba9c", "question": "What is the difference between EXISTS and GET for checking presence?", "keywords": ["EXISTS", "GET", "null"]}
+{"id": "9799c3b2-8afb-4c60-8a7c-b903d4bced2d", "question": "What are Redis Lists and what are they good for?", "keywords": ["lists", "queue", "order"]}
+{"id": "5ba5b064-d3b5-4f7a-9c09-12459d84b4bd", "question": "What are Redis Sets and what are they good for?", "keywords": ["sets", "unique", "membership"]}
+{"id": "71befea7-e15c-4361-b717-180f1041aa37", "question": "How do you compute intersection of sets in Redis?", "keywords": ["SINTER", "sets", "intersection"]}
+{"id": "b7aba891-1d7c-44e5-b4f6-8b8ffb312c56", "question": "How do you compute union of sets in Redis?", "keywords": ["SUNION", "sets", "union"]}
+{"id": "a5922812-79f4-4c6c-8e76-69446fcbb4f8", "question": "How do you compute difference of sets in Redis?", "keywords": ["SDIFF", "sets", "difference"]}
+{"id": "b96f2ce5-7eb7-4275-b89a-8341913b21cc", "question": "What is a Redis Hash and why is it useful?", "keywords": ["hash", "fields", "object"]}
+{"id": "38efb63e-5d91-4c31-af76-f7ed0c8db184", "question": "How do you increment a hash field in Redis?", "keywords": ["HINCRBY", "hash", "counter"]}
+{"id": "10e00d56-0467-4356-81ef-03b1e6387b2f", "question": "How do you get a range of list elements in Redis?", "keywords": ["LRANGE", "list", "slice"]}
+{"id": "7d672d91-51a7-4bf4-8d03-49769367c8e9", "question": "What is the difference between LPUSH and RPUSH?", "keywords": ["LPUSH", "RPUSH", "list"]}
+{"id": "084d0a73-1143-4f68-86b4-0dc34bba4607", "question": "What is the difference between LPOP and RPOP?", "keywords": ["LPOP", "RPOP", "list"]}
+{"id": "09eb3069-ec88-40f6-9dd7-50e9a1d00aa3", "question": "What is the difference between BLPOP and BRPOP?", "keywords": ["BLPOP", "BRPOP", "blocking"]}
+{"id": "cfcc2840-4b2e-436e-96be-c930fefa7d01", "question": "What does BRPOPLPUSH do?", "keywords": ["BRPOPLPUSH", "reliable queue", "list"]}
+{"id": "fca6f527-8bab-453f-8dcb-4e704f8855c9", "question": "How do you implement a reliable work queue with Redis Lists?", "keywords": ["BRPOPLPUSH", "processing list", "retry"]}
+{"id": "48e27392-765f-47a8-a210-92041a283825", "question": "Why can large hashes/lists cause latency spikes?", "keywords": ["O(N)", "big values", "blocking"]}
+{"id": "74e91790-1934-417f-92cf-e46e62e76b88", "question": "What does 'instantaneous_ops_per_sec' represent in INFO?", "keywords": ["ops/sec", "throughput", "INFO"]}
+{"id": "002f058f-a38c-411b-a5f5-31b798cee507", "question": "What does 'connected_clients' represent in INFO?", "keywords": ["clients", "connections", "INFO"]}
+{"id": "4a32063f-ebad-40bc-bd71-19997ce66d47", "question": "What does 'evicted_keys' indicate?", "keywords": ["evictions", "maxmemory", "pressure"]}
+{"id": "9991e22b-a734-4bec-bb0e-8f3b2bae1b1e", "question": "What does 'keyspace_hits' and 'keyspace_misses' indicate?", "keywords": ["hit rate", "miss rate", "cache"]}
+{"id": "12f3d4f2-c755-4dd8-8c47-898735ff00d0", "question": "How do you compute cache hit rate from INFO stats?", "keywords": ["hit rate", "keyspace_hits", "keyspace_misses"]}
+{"id": "d774c201-eb44-4d31-bb0e-65ff127d5879", "question": "Why should Redis not be exposed to the public internet?", "keywords": ["security", "attack", "misconfig"]}
+{"id": "feacf4ab-dceb-48c5-a9e6-977e841b24d0", "question": "What is the purpose of renaming dangerous Redis commands?", "keywords": ["rename-command", "FLUSHALL", "CONFIG"]}
+{"id": "d22a3aa9-d552-48a9-867b-38a9f71ed300", "question": "What does BGSAVE do?", "keywords": ["BGSAVE", "RDB", "fork"]}
+{"id": "788d27f9-27d5-4820-be26-61118df80088", "question": "What does SAVE do and why is it risky in production?", "keywords": ["SAVE", "blocking", "RDB"]}
+{"id": "d1868d7d-1c0f-4cfc-8c1e-7fd1e656ec85", "question": "What is the difference between RDB snapshot frequency settings and durability?", "keywords": ["save", "snapshot interval", "data loss"]}
+{"id": "011fd47e-c3d4-43b8-a8b3-910e9b4e6351", "question": "What is AOF rewrite and when is it triggered?", "keywords": ["AOF rewrite", "BGREWRITEAOF", "size"]}
+{"id": "ba39e71e-ae89-4bf9-9e3c-dfd7ac4ec992", "question": "Can Redis replicas serve read traffic?", "keywords": ["replicas", "read scaling", "stale"]}
+{"id": "352308ce-f310-4f7e-9186-6e196b4db652", "question": "What is read-after-write consistency and why can replicas break it?", "keywords": ["read-after-write", "replication lag", "stale reads"]}
+{"id": "14b2b598-50cb-4af5-946e-8d4aefebaf64", "question": "How can an application handle stale reads from replicas?", "keywords": ["sticky reads", "read your writes", "routing"]}
+{"id": "59918a5a-3ced-4645-88f8-7b733f772381", "question": "What does MOVED redirection mean in Redis Cluster?", "keywords": ["MOVED", "cluster redirect", "slot"]}
+{"id": "1552cfd8-8313-4637-84d4-bbfc793dc9f6", "question": "What does ASK redirection mean in Redis Cluster?", "keywords": ["ASK", "migrating", "slot move"]}
+{"id": "044eb341-66a7-4960-a125-a1005294e77c", "question": "What is the benefit of using Redis for feature flags?", "keywords": ["feature flags", "low latency", "config"]}
+{"id": "b745058f-942f-4b5b-8952-67657fe735e7", "question": "How do you implement distributed counters with Redis?", "keywords": ["INCR", "atomic", "metrics"]}
+{"id": "1a1661d2-886b-468b-b703-b280a50ee1e9", "question": "How do you implement request deduplication using Redis?", "keywords": ["deduplication", "SETNX", "TTL"]}
+{"id": "fcfe43ff-760a-48dc-9437-602ac5086656", "question": "What is Redis time series and when would you use RedisTimeSeries?", "keywords": ["RedisTimeSeries", "metrics", "retention"]}
+{"id": "e7aae256-05b9-4d10-881b-d585a4ad7829", "question": "What is the difference between Redis Streams and Kafka conceptually?", "keywords": ["streams", "kafka", "consumer groups"]}
+{"id": "edda03db-aa87-45d3-a7c1-500233007343", "question": "How do you enable TLS for Redis connections?", "keywords": ["TLS", "encryption", "in transit"]}
+{"id": "2822f2bd-9304-4668-822f-8e041d0e6235", "question": "What is the impact of using very long keys in Redis?", "keywords": ["key length", "memory overhead", "bandwidth"]}
+{"id": "991eea3c-2f2b-4308-9d5a-a18853f27d9f", "question": "What is a good strategy to version cache keys during deployments?", "keywords": ["versioning", "cache invalidation", "deploy"]}
+{"id": "9e47b739-e166-4dc0-8e33-6ee797f2abdb", "question": "What is the purpose of redis-cli --latency?", "keywords": ["latency", "diagnostics", "redis-cli"]}
+{"id": "b065cb88-6de5-4adb-af3e-98260a859b77", "question": "What is 'aof-use-rdb-preamble' and why is it useful?", "keywords": ["AOF", "RDB preamble", "restart"]}
+{"id": "03a83c1a-1f50-49ea-9fe2-d93c6b18339a", "question": "What does 'replica-read-only' do?", "keywords": ["replica-read-only", "safety", "writes"]}
+{"id": "c8e5ece5-80b1-4620-bc46-57c58fd166c7", "question": "What does DBSIZE do?", "keywords": ["DBSIZE", "key count", "database"]}
+{"id": "404aa77d-7a0b-499d-ba45-89c7921f72ab", "question": "What does TYPE return in Redis?", "keywords": ["TYPE", "datatype", "introspection"]}
+{"id": "51fe8f1f-6048-4e86-a7d7-de8ad81bd842", "question": "What does MEMORY USAGE tell you?", "keywords": ["MEMORY USAGE", "bytes", "key size"]}
+{"id": "0748d9b7-0d91-40a6-828d-dd4eef060c73", "question": "What does CLIENT LIST show?", "keywords": ["CLIENT LIST", "connections", "clients"]}
+{"id": "c37c31b5-7a6a-4ca7-8119-2f1ddfc68885", "question": "What is the Redis event loop and why is it important?", "keywords": ["event loop", "I/O multiplexing", "non-blocking"]}
+{"id": "0045ce2a-c085-4e3f-86b5-1dda2ddbb0ca", "question": "What is the role of 'hz' configuration in Redis?", "keywords": ["hz", "background tasks", "frequency"]}
+{"id": "886c22c1-d570-4cbd-ba57-6fe6a675c4e1", "question": "What is the difference between strong consistency and eventual consistency in Redis deployments?", "keywords": ["consistency", "eventual", "replicas"]}
+{"id": "bf7a0532-a5ce-491d-a957-f1bfc64b94e4", "question": "How do you avoid cache stampede for very popular keys?", "keywords": ["stampede", "locking", "early refresh"]}
+{"id": "003e1eb6-9933-4333-9c3c-a8fcf7bb469c", "question": "What is Redis GEO and which data structure backs geospatial indexes?", "keywords": ["GEO", "sorted set", "geohash"]}
+{"id": "b8fbb2a2-2614-4c51-bdd4-ddef72035f89", "question": "What does GEOADD do in Redis?", "keywords": ["GEOADD", "coordinates", "geo"]}
+{"id": "fb65063d-ea33-4770-be2d-485a87f7a6cf", "question": "What does GEODIST return?", "keywords": ["GEODIST", "distance", "geo"]}
+{"id": "49ce7bea-8266-4930-9d0b-c91e76f98a43", "question": "What is HyperLogLog used for in Redis and what are its tradeoffs?", "keywords": ["HyperLogLog", "cardinality", "approximate"]}
+{"id": "8db123c8-b13d-4950-a816-c62d7ae37e62", "question": "What are Redis Bitmaps and when are they useful?", "keywords": ["bitmaps", "SETBIT", "analytics"]}
+{"id": "9770af21-0c3f-4869-9443-16f47afd282a", "question": "What is the difference between BITCOUNT and PFCOUNT?", "keywords": ["BITCOUNT", "PFCOUNT", "unique"]}
+{"id": "c035e723-3246-4b46-a04a-3beb40eef81b", "question": "What is a Redis transaction and what guarantee does it provide?", "keywords": ["transaction", "MULTI/EXEC", "ordering"]}
+{"id": "e254621c-9392-48d0-95b9-413a0f91b721", "question": "What is optimistic concurrency control in Redis and how is WATCH used?", "keywords": ["WATCH", "optimistic", "CAS"]}
+{"id": "789826d8-d71e-4ba5-aab1-393fed1edcaf", "question": "How do you implement an atomic check-and-set update in Redis?", "keywords": ["WATCH", "MULTI", "EVAL"]}
+{"id": "d91ad540-d2b9-4ac4-8ab1-272c584f04ee", "question": "What is the difference between Redis Cluster and Sentinel-based HA?", "keywords": ["cluster", "sentinel", "sharding"]}
+{"id": "eb6fe43c-f11e-40e0-b446-253e6bda011c", "question": "What is a Redis hash slot and how is it computed?", "keywords": ["hash slot", "CRC16", "16384"]}
+{"id": "92c24a08-112f-4e05-bd58-51ddbac9be71", "question": "What is a Redis 'hash tag' and give an example key using it?", "keywords": ["hash tag", "{...}", "cluster"]}
+{"id": "a5517a0b-81de-4395-813d-2da90b10e066", "question": "Why do Redis background saves sometimes cause memory spikes?", "keywords": ["fork", "copy-on-write", "memory"]}
+{"id": "6ad5189a-3230-4259-950b-84d16e086009", "question": "What is the difference between synchronous replication and Redis's default replication?", "keywords": ["async replication", "WAIT", "ack"]}
+{"id": "f15fa7dd-8954-469a-b7b2-4ee4b54971c6", "question": "How can Redis be used as a distributed semaphore?", "keywords": ["semaphore", "sorted set", "atomic"]}
+{"id": "14a1e3c3-5631-4cc3-a44f-2e9c443ee77c", "question": "What is the difference between a lock and a semaphore in distributed systems?", "keywords": ["lock", "semaphore", "concurrency limit"]}
+{"id": "4cc5242c-0283-41dc-85d8-2bfe3c9ba1bf", "question": "What is the risk of using SETNX for locks without TTL?", "keywords": ["SETNX", "deadlock", "TTL"]}
+{"id": "169f6b4b-7805-4f20-9ce4-f1ec15475cab", "question": "How do you safely release a Redis lock to avoid deleting someone else’s lock?", "keywords": ["unique token", "check-and-delete", "Lua"]}
+{"id": "012dd4af-7953-4fb7-9034-e7babf025092", "question": "What is Redlock and why is it controversial?", "keywords": ["Redlock", "distributed lock", "safety"]}
+{"id": "268fddbc-9ad8-4286-a358-71b8d7e2c226", "question": "What is the difference between cache invalidation and cache update on write?", "keywords": ["invalidate", "update", "consistency"]}
+{"id": "978119e2-0e22-4294-8f0d-1db31c912590", "question": "What is 'thundering herd' in caching systems?", "keywords": ["thundering herd", "cache stampede", "load"]}
+{"id": "6bb9c618-5bc5-4fb5-86ea-9fcf5a329cfd", "question": "What is a common pattern to implement distributed rate limits per API key?", "keywords": ["per-key", "rate limiting", "namespace"]}
+{"id": "5a2c6771-7499-4d37-b718-f01437d4f594", "question": "What is an important difference between using Redis for analytics vs caching?", "keywords": ["analytics", "write volume", "memory"]}
+{"id": "f5dabf63-dcd4-4b32-8b5d-36b824c7030a", "question": "What is the difference between HSET and SET for storing user data?", "keywords": ["HSET", "hash", "fields"]}
+{"id": "fdd3d5fe-9962-4a15-9aa0-ee850074d38d", "question": "What happens if you run a long-running command in Redis?", "keywords": ["blocking", "single-threaded", "latency"]}
+{"id": "d9b28592-f537-436f-a123-eeee930d2de4", "question": "What is the purpose of redis-cli --bigkeys?", "keywords": ["--bigkeys", "key size", "diagnostics"]}
+{"id": "0251843b-1b63-4817-b4be-7fd59b64f53d", "question": "What is the purpose of redis-cli --hotkeys?", "keywords": ["--hotkeys", "frequency", "diagnostics"]}
+{"id": "def3ff0c-3028-4392-a310-e8787c33fdf6", "question": "What are common causes of Redis 'OOM command not allowed' errors?", "keywords": ["OOM", "maxmemory", "noeviction"]}
+{"id": "b15f68b9-cfad-4166-bcc1-35844ffcdbcc", "question": "How do you minimize replication bandwidth usage in Redis?", "keywords": ["replication", "bandwidth", "compression"]}
+{"id": "905af20b-9933-4af2-9dae-a0dafa0265ca", "question": "What is client output buffer limit and why can it disconnect clients?", "keywords": ["output buffer", "slow client", "disconnect"]}
+{"id": "49b04774-4b8c-4a4c-8c5c-6fcaf0a4179f", "question": "Why should you set timeouts and retries in Redis clients carefully?", "keywords": ["timeouts", "retries", "idempotency"]}
+{"id": "ffd461f6-64e7-4438-a097-54b8ac291024", "question": "What is the difference between READONLY and READWRITE modes in Redis Cluster clients?", "keywords": ["READONLY", "replicas", "cluster"]}
+{"id": "2acf7c89-75df-4485-a062-c702d6d67ff0", "question": "How do you migrate keys safely in a Redis Cluster resharding event?", "keywords": ["resharding", "MOVED", "slots"]}
+{"id": "23504cb4-747f-4fba-8c83-9c7b1bce9be8", "question": "What is a common Redis pattern for implementing delayed jobs?", "keywords": ["delayed jobs", "sorted set", "timestamp"]}
+{"id": "6f6d8fe3-970e-42fb-ab70-6d3b545033de", "question": "How do you implement a sliding TTL (refresh on access) cache entry in Redis?", "keywords": ["sliding TTL", "EXPIRE", "touch"]}
+{"id": "7fb7af7f-bb38-4149-b9df-a9e5d457e213", "question": "What is the tradeoff between long TTL and short TTL in caching?", "keywords": ["TTL", "staleness", "load"]}
+{"id": "e013d17f-3902-4467-a0f2-546d50e9aae9", "question": "What is the difference between Redis STRING and Redis Hash for counters?", "keywords": ["string", "hash", "counter"]}
+{"id": "78513269-3ca5-4115-b497-f4fb76bdce66", "question": "What is a good approach to store API rate limit state per user in Redis?", "keywords": ["rate limit", "per user", "namespace"]}
+{"id": "2136378a-f9a9-41fb-8eb8-1d4618da5053", "question": "What is the difference between Redis as a message broker and Redis as an event log?", "keywords": ["broker", "streams", "pubsub"]}
+{"id": "ad44f34f-8c93-404c-b1ca-be9a4ce86c32", "question": "How do you design Redis keys to avoid collisions across environments like staging and production?", "keywords": ["prefix", "environment", "namespacing"]}
+{"id": "a033e1f5-b0fc-4506-a32d-68c69cd19699", "question": "What is one safe way to perform bulk key deletion in production?", "keywords": ["SCAN", "UNLINK", "non-blocking"]}

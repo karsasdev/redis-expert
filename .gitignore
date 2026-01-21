@@ -1,0 +1,45 @@
+# Binaries
+bin/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.so.*
+*.dylib
+.vector_db_initialized
+# Test binaries
+*.test
+*.out
+
+# Dependency directories
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+.venv/
+*redis-docs/
+# Build artifacts
+*.o
+*.a
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+files.txt
+projects
+
