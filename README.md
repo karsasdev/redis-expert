@@ -65,3 +65,8 @@ Example questions:
 - "Explain Redis pub/sub patterns"
 
 See [sample-chat.md](sample-chat.md) for example conversations (single-threaded execution, Redis vs Kafka streams, Lua scripting, and more).
+
+## Attribution
+
+This project uses Redis documentation © Redis Ltd., licensed under CC BY-NC-SA 4.0 / CC BY-SA 4.0 (see https://github.com/redis/docs/blob/main/LICENSE).
+
