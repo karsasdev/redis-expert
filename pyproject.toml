@@ -15,6 +15,7 @@ dependencies = [
     "langchain-redis>=0.2.5",
     "langchain-text-splitters>=1.1.0",
     "matplotlib>=3.10.8",
+    "ragas>=0.4.3",
     "sentence-transformers>=5.2.0",
     "streamlit>=1.53.1",
     "tqdm>=4.67.1",
@@ -27,3 +28,10 @@ dev = [
     "ruff>=0.14.13",
     "sqlalchemy>=2.0.45",
 ]
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

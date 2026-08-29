@@ -1,3 +1,5 @@
+"""Application settings loaded from environment variables (models, DB connections, Redis, Gradio)."""
+
 from pydantic_settings import BaseSettings
 
 
@@ -17,7 +19,7 @@ class Settings(BaseSettings):
     POSTGRES_HOST: str = "localhost"  # use "pgvectordb" if app runs inside docker
     POSTGRES_PORT: int = 5432
     POSTGRES_DB: str = "vector_db"
-    
+
     REDIS_HOST: str = "localhost"
     REDIS_PORT: int = 6379
     REDIS_PASSWORD: str = ""
@@ -27,6 +29,7 @@ class Settings(BaseSettings):
 
     @property
     def POSTGRES_DB_URI(self) -> str:
+        """Build the SQLAlchemy/psycopg connection URI for the Postgres vector DB."""
         return (
             f"postgresql+psycopg://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}"
             f"@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
@@ -34,6 +37,7 @@ class Settings(BaseSettings):
 
     @property
     def REDIS_URL(self) -> str:
+        """Build the Redis connection URL from host, port, and password settings."""
         return f"redis://:{self.REDIS_PASSWORD}@{self.REDIS_HOST}:{self.REDIS_PORT}/0"
 
 

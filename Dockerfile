@@ -4,7 +4,9 @@ WORKDIR /workspace
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
-    curl
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 # install uv
 RUN pip install --no-cache-dir uv

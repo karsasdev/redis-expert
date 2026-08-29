@@ -1,8 +1,11 @@
+"""Utility decorators — currently a function execution timer."""
+
 import time
 from functools import wraps
 
 
 def time_it(func):
+    """Decorator that prints how long the wrapped function took to run."""
     @wraps(func)
     def wrapper(*args, **kwargs):
         start_time = time.perf_counter()

@@ -1,19 +1,23 @@
+"""Filesystem and JSONL helper utilities for path resolution and reading/writing line-delimited JSON."""
+
 import json
 import os
 from pathlib import Path
-from typing import List, Dict, Any
-
+from typing import Any, Dict, List
 
 
 def get_project_root() -> Path:
+    """Return the current working directory as the project root."""
     return Path(os.getcwd()).resolve()
 
 
 def get_abs_path(path: str) -> Path:
+    """Resolve a path relative to the project root into an absolute path."""
     return get_project_root() / path
 
 
 def load_jsonl(path: str) -> List[Dict[str, Any]]:
+    """Read a JSONL file and return its records as a list of dicts."""
     rows = []
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
@@ -23,7 +27,7 @@ def load_jsonl(path: str) -> List[Dict[str, Any]]:
     return rows
 
 def write_list_to_jsonl(meta_list, out_path):
-
+    """Write a list of dict-like items to a JSONL file, creating parent directories as needed."""
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -33,6 +37,7 @@ def write_list_to_jsonl(meta_list, out_path):
 
 
 def jsonl_to_dict(path: str, key_field: str) -> dict:
+    """Read a JSONL file into a dict keyed by the given field's value from each record."""
     out = {}
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
@@ -47,6 +52,7 @@ def jsonl_to_dict(path: str, key_field: str) -> dict:
     return out
 
 def count_subdirectories():
+    """Read paths from files.txt and count immediate child directories under each parent directory."""
     subdirs = {}  # parent_dir -> set(child_dirs)
 
     with open("files.txt", "r", encoding="utf-8") as f:

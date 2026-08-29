@@ -1,3 +1,5 @@
+"""Text normalization and tokenization helpers."""
+
 import re
 from typing import List
 
