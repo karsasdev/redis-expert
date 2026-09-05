@@ -6,7 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from app.config import settings
 from app.embeddings import get_embeddings
 from app.ingestion.chunker import DocumentChunker
-from app.store.pg_vector import PGVectorStore
+from app.store.pg_vector_async_store import PGVectorAsyncStore
 from scripts.initialize import download_redis_docs
 
 
@@ -17,7 +17,7 @@ def initialize_redis_docs():
 
 def initialize_vector_database(by_reset: bool = False):
     """Chunk and embed the Redis docs into the vector store, unless already initialized (or forced via reset)."""
-    vs = PGVectorStore(embeddings=get_embeddings())
+    vs = PGVectorAsyncStore(embeddings=get_embeddings())
     if by_reset:
         print("Deleting existing vectorstore...")
         vs.delete()
