@@ -7,5 +7,5 @@ from app.config import settings
 
 def get_embeddings():
     """Create a HuggingFace embeddings instance using the configured embedding model."""
-    return HuggingFaceEmbeddings(model_name=settings.EMBEDDING_MODEL)
+    return HuggingFaceEmbeddings(model_name=settings.EMBEDDING_MODEL, model_kwargs={"device": "cpu"})
 

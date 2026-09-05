@@ -4,7 +4,12 @@ from dotenv import load_dotenv
 
 from app.chatbot.openai import ChatBot
 from app.embeddings import get_embeddings
-from app.init import initialize_gradio_app, initialize_redis_docs, initialize_vector_database
+from app.init import (
+    initialize_gradio_app,
+    initialize_ground_truth_dataset,
+    initialize_redis_docs,
+    initialize_vector_database,
+)
 from app.store.pg_vector import PGVectorStore
 
 
@@ -13,6 +18,7 @@ def create_app():
     load_dotenv(override=True)
     initialize_redis_docs()
     initialize_vector_database()
+    initialize_ground_truth_dataset()
     vs = PGVectorStore(embeddings=get_embeddings())
     chatbot = ChatBot(vs)
     fn = chatbot.get_chat_function()

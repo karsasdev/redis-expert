@@ -35,6 +35,8 @@ services:
       - "7860:7860"
     env_file:
       - .env
+    volumes:
+      - ./app/evals:/workspace/src/app/evals
 volumes:
   pgdata:
   redisdata:
